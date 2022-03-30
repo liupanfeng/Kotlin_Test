@@ -1,1 +1,2 @@
 此项目对Kotlin的学习，涉及的内容大多是系统原生的使用总结
+1.materila这个包下面 com.test.kotlin_test.materila.MaterialActivity 这个是对MaterialDedign的演示
