@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".LunchActivity">
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务"
+            android:onClick="startService"
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="material design"
+            android:onClick="startMaterial"
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册广播"
+            android:onClick="startBroadcast"
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="强制退出"
+            android:onClick="forceOffline"
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Fragment"
+            android:onClick="startFragment"
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ContentProvider"
+            android:onClick="startContentProvider"
+    />
+
+    <Button android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="数据持久化"
+               android:onClick="startSaveData"
+/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kotlin网络"
+            android:onClick="kotlinNetWork"
+    />
+
+</LinearLayout>
