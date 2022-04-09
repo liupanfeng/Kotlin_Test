@@ -24,6 +24,9 @@ android {
         sourceCompatibility = '1.8'
         targetCompatibility = '1.8'
     }
+
+
+
 }
 
 dependencies {
@@ -48,4 +51,12 @@ dependencies {
 
 
     implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+
+
+    implementation("io.coil-kt:coil:1.1.1")
+
+    // 如果想要显示 Gif、SVG、视频帧等类型的图片，则需要额外引入对应的支持库：
+    implementation("io.coil-kt:coil-gif:1.0.0")
+    implementation("io.coil-kt:coil-svg:1.0.0")
+    implementation("io.coil-kt:coil-video:1.0.0")
 }

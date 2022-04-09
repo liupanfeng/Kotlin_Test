@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.bumptech.glide.Glide
 import com.test.kotlin_test.R
 
@@ -50,6 +51,7 @@ class GirlAdapter(private val context:Context): RecyclerView.Adapter<GirlAdapter
         val girl= mGirlList[position]
         holder.girlName.text = girl.name
         Glide.with(context).load(girl.imageId).into(holder.girlImage)
+//        holder.girlImage.load(girl.imageId)
     }
 
     class GirlHolder(view : View) : RecyclerView.ViewHolder(view){
