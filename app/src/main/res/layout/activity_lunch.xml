@@ -4,9 +4,15 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
         tools:context=".LunchActivity">
 
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新的图片框架Coil的使用"
+            android:onClick="startCoil"
+    />
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="服务"

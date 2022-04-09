@@ -19,6 +19,9 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
+                android:name=".coil.CoilActivity"
+                android:exported="false" />
+        <activity
                 android:name=".optimaze.HandlerActivity"
                 android:exported="false" />
         <activity android:name=".network.NetworkActivity" />

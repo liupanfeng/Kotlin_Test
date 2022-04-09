@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.test.kotlin_test.broadcast.BroadcastActivity
+import com.test.kotlin_test.coil.CoilActivity
 import com.test.kotlin_test.content_provider.ContentProviderActivity
 import com.test.kotlin_test.fragment.FragmentActivity
 import com.test.kotlin_test.kotlin_senior.SeniorActivity
@@ -58,6 +59,10 @@ class LunchActivity : BaseActivity() {
 
     fun  kotlinNetWork(view:View){
         startActivity(Intent(this, NetworkActivity::class.java))
+    }
+
+    fun startCoil(view: View) {
+        startActivity(Intent(this, CoilActivity::class.java))
     }
 
 
