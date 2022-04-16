@@ -10,6 +10,12 @@
 
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="协程"
+            android:onClick="startCoroutines"
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="新的图片框架Coil的使用"
             android:onClick="startCoil"
     />

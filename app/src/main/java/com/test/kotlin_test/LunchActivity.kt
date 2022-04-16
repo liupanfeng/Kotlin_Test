@@ -6,6 +6,7 @@ import android.view.View
 import com.test.kotlin_test.broadcast.BroadcastActivity
 import com.test.kotlin_test.coil.CoilActivity
 import com.test.kotlin_test.content_provider.ContentProviderActivity
+import com.test.kotlin_test.coroutines.CoroutinesActivity
 import com.test.kotlin_test.fragment.FragmentActivity
 import com.test.kotlin_test.kotlin_senior.SeniorActivity
 import com.test.kotlin_test.materila.MaterialActivity
@@ -63,6 +64,10 @@ class LunchActivity : BaseActivity() {
 
     fun startCoil(view: View) {
         startActivity(Intent(this, CoilActivity::class.java))
+    }
+
+    fun startCoroutines(view: View) {
+        startActivity(Intent(this, CoroutinesActivity::class.java))
     }
 
 

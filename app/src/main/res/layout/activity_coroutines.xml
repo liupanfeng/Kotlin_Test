@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 数据区域 -->
+    <data>
+        <variable
+                name="loginViewModel"
+                type="com.test.kotlin_test.coroutines.viewmodel.LoginViewModel" />
+    </data>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".broadcast.LoginActivity">
+
+        <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_centerInParent="true"
+                android:hint="user:lpf666"
+                />
+
+        <EditText
+                android:id="@+id/password"
+                android:layout_below="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="password:123456"
+                />
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:text="登录"
+                android:onClick="onLogin" />
+
+
+        <TextView
+                android:id="@+id/loginResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{loginViewModel.userInfo.toString()}"
+                tools:ignore="HardcodedText"
+                android:textColor="#ff0"
+                android:textSize="22dp" />
+
+    </RelativeLayout>
+</layout>
