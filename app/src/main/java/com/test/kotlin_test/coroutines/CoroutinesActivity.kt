@@ -47,6 +47,7 @@ class CoroutinesActivity : AppCompatActivity() {
 
     //username =lpf666 password=123456
     fun onLogin(view: View){
-        viewModel.login(username.text.toString(),password.text.toString())
+//        viewModel.login(username.text.toString(),password.text.toString())
+        viewModel.login("lpf666","123456")
     }
 }

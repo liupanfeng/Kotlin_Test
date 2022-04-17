@@ -6,6 +6,7 @@ import com.test.kotlin_test.coroutines.bean.ResponseWrapper
 import com.test.kotlin_test.coroutines.bean.UserInfo
 import androidx.lifecycle.viewModelScope
 import com.test.kotlin_test.coroutines.repository.DataRepository
+import io.reactivex.schedulers.Schedulers
 import kotlinx.coroutines.launch
 
 /**
@@ -20,7 +21,9 @@ class LoginViewModel:ViewModel() {
     var userInfo = MutableLiveData<ResponseWrapper<UserInfo>>()
 
     fun login(username:String,password:String){
-        viewModelScope.launch {
+        //GlobalScope 全局作用域
+        //viewModelScope 默认的是主线程
+        viewModelScope.launch{
             userInfo.value=DataRepository().login(username, password)
         }
     }
